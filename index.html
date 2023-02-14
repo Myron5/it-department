@@ -5,6 +5,157 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body></body>
+  <body>
+    <header></header>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">IT Department</h1>
+        <p class="hero__texts">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio
+          aenean sed adipiscing diam donec. Mollis aliquam ut porttitor leo.
+          Tortor condimentum lacinia quis vel eros donec ac odio. A diam
+          sollicitudin tempor id. Amet mauris commodo quis imperdiet massa
+          tincidunt. Tellus mauris a diam maecenas sed enim ut sem viverra.
+          Condimentum mattis pellentesque id nibh tortor id aliquet. Egestas
+          fringilla phasellus faucibus scelerisque. Diam maecenas ultricies mi
+          eget mauris pharetra et ultrices. Est sit amet facilisis magna etiam
+          tempor orci eu. Tristique sollicitudin nibh sit amet commodo. Lobortis
+          scelerisque fermentum dui faucibus in ornare quam viverra orci. Libero
+          id faucibus nisl tincidunt eget nullam non. Gravida arcu ac tortor
+          dignissim convallis aenean et tortor. Ac tortor dignissim convallis
+          aenean et tortor at. In hendrerit gravida rutrum quisque non tellus
+          orci ac. Lectus mauris ultrices eros in cursus turpis massa tincidunt.
+          Faucibus a pellentesque sit amet porttitor eget dolor morbi.
+        </p>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="container">
+        <h2 class="slider__title slider__title--active">Our projects</h2>
+        <button class="slider__btn slider__btn--left" type="button"></button>
+        <ul class="slider__list">
+          <li class="slider__item slider__item--active">
+            <!-- PICTURE -->
+            <picture class="slider__thumb">
+              <source
+                srcset="
+                  ./assets/images/slider/poster-1.webp       400w,
+                  ./assets/images/slider/poster-1@1.5x.webp  601w,
+                  ./assets/images/slider/poster-1@2x.webp    800w,
+                  ./assets/images/slider/poster-1@3x.webp   1200w
+                "
+                sizes="(min-width: 420px) 400px, 100vw"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./assets/images/slider/poster-1.jpg       400w,
+                  ./assets/images/slider/poster-1@1.5x.jpg  601w,
+                  ./assets/images/slider/poster-1@2x.jpg    800w,
+                  ./assets/images/slider/poster-1@3x.jpg   1200w
+                "
+                sizes="(min-width: 420px) 400px, 100vw"
+                type="image/jpeg"
+              />
+              <img
+                class="slider__img"
+                src="./assets/images/slider/poster-1.jpg"
+                alt="Проект it відділу профбюро номер один"
+              />
+            </picture>
+            <!------------->
+            <a
+              class="slider__link"
+              href=""
+              target="_blank"
+              rel="noreferrer noopener nofollow"
+              >Learn more</a
+            >
+          </li>
+          <li class="slider__item slider__item--next">
+            <!-- PICTURE -->
+            <picture class="slider__thumb">
+              <source
+                srcset="
+                  ./assets/images/slider/poster-2.webp       400w,
+                  ./assets/images/slider/poster-2@1.5x.webp  601w,
+                  ./assets/images/slider/poster-2@2x.webp    800w,
+                  ./assets/images/slider/poster-2@3x.webp   1200w
+                "
+                sizes="(min-width: 420px) 400px, 100vw"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./assets/images/slider/poster-2.jpg       400w,
+                  ./assets/images/slider/poster-2@1.5x.jpg  601w,
+                  ./assets/images/slider/poster-2@2x.jpg    800w,
+                  ./assets/images/slider/poster-2@3x.jpg   1200w
+                "
+                sizes="(min-width: 420px) 400px, 100vw"
+                type="image/jpeg"
+              />
+              <img
+                class="slider__img"
+                src="./assets/images/slider/poster-2.jpg"
+                alt="Проект it відділу профбюро номер два"
+              />
+            </picture>
+            <!------------->
+            <a
+              class="slider__link"
+              href=""
+              target="_blank"
+              rel="noreferrer noopener nofollow"
+              >Learn more</a
+            >
+          </li>
+          <li class="slider__item">
+            <!-- PICTURE -->
+            <picture class="slider__thumb">
+              <source
+                srcset="
+                  ./assets/images/slider/poster-3.webp       400w,
+                  ./assets/images/slider/poster-3@1.5x.webp  601w,
+                  ./assets/images/slider/poster-3@2x.webp    800w,
+                  ./assets/images/slider/poster-3@3x.webp   1200w
+                "
+                sizes="(min-width: 420px) 400px, 100vw"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./assets/images/slider/poster-3.jpg       400w,
+                  ./assets/images/slider/poster-3@1.5x.jpg  601w,
+                  ./assets/images/slider/poster-3@2x.jpg    800w,
+                  ./assets/images/slider/poster-3@3x.jpg   1200w
+                "
+                sizes="(min-width: 420px) 400px, 100vw"
+                type="image/jpeg"
+              />
+              <img
+                class="slider__img"
+                src="./assets/images/slider/poster-3.jpg"
+                alt="Проект it відділу профбюро номер три"
+              />
+            </picture>
+            <!------------->
+            <a
+              class="slider__link"
+              href=""
+              target="_blank"
+              rel="noreferrer noopener nofollow"
+              >Learn more</a
+            >
+          </li>
+        </ul>
+        <button class="slider__btn slider__btn--right" type="button"></button>
+      </div>
+    </section>
+    <footer></footer>
+  </body>
+  <script src="./JS/index.js"></script>
 </html>

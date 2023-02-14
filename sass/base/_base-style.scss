@@ -5,6 +5,13 @@
 
 body {
   font-family: "Tahoma", sans-serif;
+  font-size: 20px;
+  color: $text;
+
+  background-color: $background;
+  background-image: url(../../assets/images/background/background-1.png);
+  background-position: calc(100% - 5px) 5px;
+  background-repeat: no-repeat;
 }
 
 .container {

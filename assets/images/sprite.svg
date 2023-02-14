@@ -1,0 +1,26 @@
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="film" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.667"
+        d="M26.427 2.667H5.574a2.907 2.907 0 0 0-2.907 2.907v20.853a2.907 2.907 0 0 0 2.907 2.907h20.853a2.907 2.907 0 0 0 2.907-2.907V5.574a2.907 2.907 0 0 0-2.907-2.907zM9.333 2.667v26.667M22.667 2.667v26.667M2.667 16h26.667M2.667 9.333h6.667M2.667 22.667h6.667M22.667 22.667h6.667M22.667 9.333h6.667" />
+    </symbol>
+    <style>
+      .img {
+        display: none;
+      }
+
+      .img:target {
+        display: inline;
+      }
+    </style>
+  </defs>
+  <g id="slider-arrow--left" class='img' fill="none" viewBox="0 0 41 65">
+    <path stroke="#F5E9FF" stroke-width="7" d="M0-3.5h45.965" transform="matrix(-.72084 .6931 .72084 .6931 39 5)" />
+    <path stroke="#F5E9FF" stroke-width="7" d="M0-3.5h45.965"
+      transform="matrix(-.72084 -.6931 -.72084 .6931 35.133 65)" />
+  </g>
+  <g id="slider-arrow--right" class='img' fill="none" viewBox="0 0 41 65">
+    <path stroke="#F5E9FF" stroke-width="7" d="M0-3.5h45.965" transform="matrix(.72084 .6931 -.72084 .6931 2 5)" />
+    <path stroke="#F5E9FF" stroke-width="7" d="M0-3.5h45.965" transform="matrix(.72084 -.6931 .72084 .6931 5.866 65)" />
+  </g>
+</svg>
