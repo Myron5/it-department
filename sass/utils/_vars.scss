@@ -2,3 +2,10 @@ $background: #2d2c30;
 $main_text_color: linear-gradient(179.76deg, #fb05fe 0.21%, #4505a2 99.79%);
 $text: #f5e9ff;
 $header: #131313;
+
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1200px;
+
+$animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$slider-animation: 400ms linear;

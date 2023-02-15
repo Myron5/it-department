@@ -1,0 +1,14 @@
+.hero {
+  &__title {
+    font-size: 96px;
+    line-height: 116 / 96;
+    color: $text;
+    background-clip: text;
+    background-image: $main_text_color;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__texts {
+  }
+}
