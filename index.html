@@ -8,7 +8,32 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav" id="burger">
+          <a class="logo" href="#home">
+            <img
+              src="./assets/images/xakirmen.png"
+              alt="Logo photo"
+              style="width: 80px; height: 80px"
+            />
+          </a>
+          <div class="header__nav-right">
+            <a class="header__link" href="#about">About Us</a>
+            <a class="header__link" href="#proj">Our projects</a>
+            <a class="header__link" href="#calendar">Events calendar</a>
+            <button class="header__btn">
+              <svg class="header__icon">
+                <use href="./assets/images/sprite.svg#burger"></use>
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+      <nav class="header__nav-mob">
+        <!-- !!!!!!!!!! -->
+      </nav>
+    </header>
     <section class="hero">
       <div class="container">
         <h1 class="hero__title">IT Department</h1>
