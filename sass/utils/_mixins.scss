@@ -1,17 +1,31 @@
-@mixin mobile() {
-  @media screen and (max-width: 320px) {
+@mixin mobile($additional: 0px) {
+  @media screen and (min-width: ($mobile + $additional)) {
     @content;
   }
 }
 
-@mixin tablet() {
-  @media screen and (min-width: 760px) {
+@mixin tablet($additional: 0px) {
+  @media screen and (min-width: ($tablet+ $additional)) {
     @content;
   }
 }
 
-@mixin desktop() {
-  @media screen and (min-width: 1200px) {
+@mixin desktop($additional: 0px) {
+  @media screen and (min-width: ($desktop + $additional)) {
     @content;
+  }
+}
+
+@mixin fonts($descSize, $tablSize, $mobSize) {
+  @include mobile() {
+    font-size: $mobSize;
+  }
+
+  @include tablet() {
+    font-size: $tablSize;
+  }
+
+  @include desktop() {
+    font-size: $descSize;
   }
 }

@@ -1,6 +1,30 @@
+// --------------------------------------------- Switch burger ---------------------------------------------
+
+const refs = {
+  burgerBtn: document.querySelector(".header__btn"),
+  closeBtn: document.querySelector(".nav-mob__btn-close"),
+  links: document.querySelectorAll(".nav-mob__link"),
+  container: document.querySelector(".header__nav-mob"),
+};
+
+refs.burgerBtn.addEventListener("click", () =>
+  refs.container.classList.remove("visually-hidden")
+);
+
+refs.closeBtn.addEventListener("click", () =>
+  refs.container.classList.add("visually-hidden")
+);
+
+refs.links.forEach((link) =>
+  link.addEventListener("click", () =>
+    refs.container.classList.add("visually-hidden")
+  )
+);
+
 // ------------------------------------------- Change background -------------------------------------------
 
 const bodyRef = document.querySelector("body");
+const DURATION = 400;
 
 function changeBackground(body) {
   let idx = 1;
@@ -8,7 +32,7 @@ function changeBackground(body) {
     if (idx > 3) idx = 1;
     body.style.backgroundImage = `url(../../assets/images/background/background-${idx}.png)`;
     idx++;
-  }, 300);
+  }, DURATION);
 }
 changeBackground(bodyRef);
 
@@ -138,4 +162,43 @@ rightBtnRef.addEventListener("click", (e) => {
   slider.increment();
 });
 
-// ----------------------------------------------- Other ... -----------------------------------------------
+// ------------------------------------------ Slow lift to section ------------------------------------------
+
+const anchors = document.querySelectorAll('a[href^="#"]');
+anchors.forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const id = e.target.getAttribute("href");
+    const section = document.querySelector(id);
+    section.scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
+
+// ---------------------------------------- Observer on link section ----------------------------------------
+
+const idArr = ["about", "proj", "calendar"];
+const idSecRefs = idArr.map((id) => document.querySelector(`#${id}`));
+const idContRefs = idSecRefs.map((ref) => ref.querySelector(".container"));
+
+const observerOptions = {
+  root: null,
+  rootMargin: "0px",
+  threshold: [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9],
+};
+
+function onLoad(entries) {
+  entries.forEach((entry) => {
+    const id = entry.target.parentNode.getAttribute("id");
+    const anchor = document.querySelector(`a[href="#${id}"]`);
+    if (entry.isIntersecting) anchor.classList.add("header__link--active");
+    else anchor.classList.remove("header__link--active");
+  });
+}
+
+const observer = new IntersectionObserver(onLoad, observerOptions);
+
+idContRefs.forEach((ref) => observer.observe(ref));
+
+// ------------------------------------------------ Other ... -----------------------------------------------

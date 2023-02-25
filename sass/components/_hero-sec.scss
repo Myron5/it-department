@@ -1,16 +1,36 @@
 .hero {
-  padding-top: 120px;
+  @include mobile() {
+    padding-top: calc(110px + 30px);
+    padding-bottom: 30px;
+  }
+
+  @include tablet() {
+    padding-top: calc(110px + 37px);
+    padding-bottom: 37px;
+  }
+
+  @include desktop() {
+    padding-top: calc(110px + 45px);
+    padding-bottom: 45px;
+  }
 
   &__title {
     font-size: 96px;
+    @include fonts(96px, 88px, 55px);
     line-height: 116 / 96;
     color: $text;
+
+    background: $main_text_color;
     background-clip: text;
-    background-image: $main_text_color;
-    text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
   }
 
   &__texts {
+    margin-top: 60px;
+    font-size: 20px;
+    line-height: (30 / 20);
+    @include fonts(20px, 18px, 16px);
+    color: $text;
+    text-indent: 50px;
   }
 }

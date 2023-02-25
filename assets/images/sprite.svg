@@ -6,8 +6,13 @@
         d="M26.427 2.667H5.574a2.907 2.907 0 0 0-2.907 2.907v20.853a2.907 2.907 0 0 0 2.907 2.907h20.853a2.907 2.907 0 0 0 2.907-2.907V5.574a2.907 2.907 0 0 0-2.907-2.907zM9.333 2.667v26.667M22.667 2.667v26.667M2.667 16h26.667M2.667 9.333h6.667M2.667 22.667h6.667M22.667 22.667h6.667M22.667 9.333h6.667" />
     </symbol>
     <symbol id="burger" viewBox="0 0 40 40">
-      <path fill="inherit" d="M8 14.667V12h24v2.667H8Zm0 6.666h24v-2.666H8v2.666ZM8 28h24v-2.667H8V28Z" clip-rule="evenodd"/>
-    </symbol >
+      <path fill="inherit" d="M8 14.667V12h24v2.667H8Zm0 6.666h24v-2.666H8v2.666ZM8 28h24v-2.667H8V28Z"
+        clip-rule="evenodd" />
+    </symbol>
+    <symbol id="btn-close" viewBox="0 0 11 11">
+      <path fill="inherit"
+        d="M11 1.108 9.892 0 5.5 4.392 1.108 0 0 1.108 4.392 5.5 0 9.892 1.108 11 5.5 6.608 9.892 11 11 9.892 6.608 5.5 11 1.108Z" />
+    </symbol>
     <style>
       .img {
         display: none;
@@ -27,4 +32,5 @@
     <path stroke="#F5E9FF" stroke-width="7" d="M0-3.5h45.965" transform="matrix(.72084 .6931 -.72084 .6931 2 5)" />
     <path stroke="#F5E9FF" stroke-width="7" d="M0-3.5h45.965" transform="matrix(.72084 -.6931 .72084 .6931 5.866 65)" />
   </g>
+
 </svg>

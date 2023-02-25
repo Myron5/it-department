@@ -15,23 +15,56 @@ body {
 }
 
 .container {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 
   padding-left: 15px;
   padding-right: 15px;
 
+  @include mobile(200px) {
+    width: $mobile + 200px;
+  }
+
   @include tablet() {
-    width: 768px;
+    width: $tablet;
 
     padding-left: 20px;
     padding-right: 20px;
   }
 
   @include desktop() {
-    width: 1280px;
+    width: $desktop;
 
     padding-left: 25px;
     padding-right: 25px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.animate__flipInY {
+  display: inline-block;
+  animation: flipInY $animate_logo_time linear;
+}
+
+@keyframes flipInY {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
   }
 }

@@ -4,8 +4,10 @@ $text: #f5e9ff;
 $header: #131313;
 
 $mobile: 320px;
-$tablet: 768px;
+$tablet: 760px;
 $desktop: 1200px;
 
-$animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$animation: 200ms cubic-bezier(0.4, 0, 0.2, 1);
 $slider-animation: 400ms linear;
+
+$animate_logo_time: 500ms;

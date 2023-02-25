@@ -11,18 +11,18 @@
     <header class="header">
       <div class="container">
         <nav class="header__nav" id="burger">
-          <a class="logo" href="#home">
+          <a class="header__logo-link" href="">
             <img
-              src="./assets/images/xakirmen.png"
+              class="header__logo-img"
+              src="./assets/images/logo.png"
               alt="Logo photo"
-              style="width: 80px; height: 80px"
             />
           </a>
           <div class="header__nav-right">
             <a class="header__link" href="#about">About Us</a>
             <a class="header__link" href="#proj">Our projects</a>
             <a class="header__link" href="#calendar">Events calendar</a>
-            <button class="header__btn">
+            <button class="header__btn" type="button">
               <svg class="header__icon">
                 <use href="./assets/images/sprite.svg#burger"></use>
               </svg>
@@ -30,11 +30,8 @@
           </div>
         </nav>
       </div>
-      <nav class="header__nav-mob">
-        <!-- !!!!!!!!!! -->
-      </nav>
     </header>
-    <section class="hero">
+    <section class="hero" id="about">
       <div class="container">
         <h1 class="hero__title">IT Department</h1>
         <p class="hero__texts">
@@ -57,10 +54,10 @@
         </p>
       </div>
     </section>
-    <section class="slider">
+    <section class="slider" id="proj">
       <div class="container">
         <h2 class="slider__title">Our projects</h2>
-        <button class="slider__btn slider__btn--left" type="button"></button>
+        <button type="button" class="slider__btn slider__btn--left"></button>
         <ul class="slider__list">
           <li class="slider__item slider__item--active">
             <!-- PICTURE -->
@@ -180,7 +177,22 @@
         <button class="slider__btn slider__btn--right" type="button"></button>
       </div>
     </section>
+    <section class="calendar" id="calendar">
+      <div class="container"></div>
+    </section>
     <footer></footer>
+    <nav class="header__nav-mob nav-mob visually-hidden">
+      <div class="container">
+        <button class="nav-mob__btn-close" type="button">
+          <svg class="nav-mob__icon">
+            <use href="./assets/images/sprite.svg#btn-close"></use>
+          </svg>
+        </button>
+        <a class="nav-mob__link" href="#about">About Us</a>
+        <a class="nav-mob__link" href="#proj">Our projects</a>
+        <a class="nav-mob__link" href="#calendar">Events calendar</a>
+      </div>
+    </nav>
   </body>
   <script src="./JS/index.js"></script>
 </html>
