@@ -70,8 +70,8 @@
 
     text-align: center;
 
-    transition: opacity $slider-animation, left $slider-animation,
-      translate $slider-animation, scale $slider-animation;
+    transition: opacity $slider-animation, left $slider-animation, translate $slider-animation,
+      scale $slider-animation;
 
     @include tablet() {
       width: 400px;
@@ -159,7 +159,7 @@
 
     &--left {
       left: calc(50% - 100px);
-      background-image: url(../../assets/images/sprite.svg#slider-arrow--left);
+      background-image: url(../assets/images/sprite.svg#slider-arrow--left);
 
       @include tablet() {
         left: calc(50% - 240px);
@@ -172,7 +172,7 @@
 
     &--right {
       left: calc(50% + 100px);
-      background-image: url(../../assets/images/sprite.svg#slider-arrow--right);
+      background-image: url(../assets/images/sprite.svg#slider-arrow--right);
 
       @include tablet() {
         left: calc(50% + 240px);

@@ -2,22 +2,13 @@
   "liveServer.settings.port": 666,
   "liveSassCompile.settings.formats": [
     {
-      "format": "expanded",
-      "extensionName": ".css",
+      "format": "compressed",
+      "extensionName": ".min.css",
       "savePath": "/css"
-    } //,
-    // {
-    //   "format": "compressed",
-    //   "extensionName": ".min.css",
-    //   "savePath": "/css",
-    // }
+    }
   ],
-  "liveSassCompile.settings.excludeList": [
-    "/**/node_modules/**",
-    "/.vscode/**",
-    "/**/utils/**"
-  ],
-  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.excludeList": ["/**/node_modules/**", "/.vscode/**", "/**/utils/**"],
+  "liveSassCompile.settings.generateMap": false,
   "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
   "liveSassCompile.settings.showOutputWindowOn": "None",
 
@@ -42,10 +33,7 @@
 
       // colour of class names
       {
-        "scope": [
-          "string.quoted.double.html",
-          "entity.other.attribute-name.class.css"
-        ],
+        "scope": ["string.quoted.double.html", "entity.other.attribute-name.class.css"],
         "settings": {
           "foreground": "#2498fa"
         }
